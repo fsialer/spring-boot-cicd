@@ -22,7 +22,7 @@ jobs:
 
       - name: Build
         run: |
-          docker build -t us-east1-docker.pkg.dev/${{secrets.GCP_PROJECT_ID}}/docker-images-samples/helloworld:latest
+          docker build -t us-east1-docker.pkg.dev/${{secrets.GCP_PROJECT_ID}}/docker-images-samples/helloworld:latest .
 
       - name: Push
         run: |
